@@ -1,10 +1,12 @@
 import math, textwrap
 
+gMaxAllowed = 150
+
 while True:
 	max_num_str = input("How far into the sequence should I go? ")
 	try:
 		max_num = int(max_num_str)
-		if(max_num <= 150 and max_num >= 0):
+		if(max_num <= gMaxAllowed and max_num >= 0):
 			n = 1
 			index = 0
 			previous = 0
@@ -27,7 +29,7 @@ while True:
 					break
 			break
 		else:
-			print("Please input a number between 0-150")
+			print("Please input a number between 0-" + str(gMaxAllowed))
 
 	except ValueError:
 		print("Please only enter a positive whole number")
