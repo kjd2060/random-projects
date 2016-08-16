@@ -1,6 +1,10 @@
 import math
 
 gMaxDigitsAllowed = 49
+
+'''
+I'll use string formatting to do this.
+'''
 while True:
 	digitsStr = input("How many digits to display? ")
 	try:
