@@ -2,6 +2,11 @@ import math
 
 gMaxAllowed = 100
 
+'''
+Standard factorial recursive implementation.  Get input from user and validate it, then
+call Factorial on that number so long as it's below our max allowed.  Then in the factorial
+function, if we're not at our base case (1), recurse to n-1
+'''
 def factorial(n):
 	if(n == 1):
 		return 1
