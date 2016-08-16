@@ -2,12 +2,15 @@ import math
 
 gMaxDigitsAllowed = 49
 
+'''
+I'll use string formatting to do this.
+'''
 while True:
 	digitsStr = input("How many digits to display? ")
 	try:
 		digits = int(digitsStr)
-		if((digits > 0) and (digits < gMaxDigitsAllowed)):
-			lengthString = "{0:." + str(digits) + "f}"
+		if((digits > 0) and (digits < gMaxDigitsAllowed)): # don't go above where we're accurate to
+			lengthString = "{0:." + str(digits) + "f}" # combine the string formatting with the num of digits we want
 			print(lengthString.format(math.pi))
 			break
 		elif(digits > gMaxDigitsAllowed - 1):
