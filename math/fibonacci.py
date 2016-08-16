@@ -2,6 +2,12 @@ import math, textwrap
 
 gMaxAllowed = 150
 
+'''
+Get user input, then compare and make sure we're between the max and min values.  From here, append our initial 1 to the sequence
+(starting number), and then start iterating.  the formula for fibonacci's sequence is given by Fn = Fn-1 + Fn-2, or Fn+1 = Fn + Fn-1.
+I use the latter one to compute the next n, incrementing an index to ensure we stay within index should we not hit the number the
+user entered in the sequence.  The numbers are then added to an array and printed nicely.
+'''
 while True:
 	max_num_str = input("How far into the sequence should I go? ")
 	try:
