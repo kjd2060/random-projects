@@ -1,5 +1,6 @@
 /*
- * quick pass at this.  this will work but I can't run it cause don't have jdk on this computer
+ * quick pass at this.  this will work but make sure to seperate the main function into its own class/file (Main.java) 
+ * and the DataClass into its own file (DataClass.java)
 */
 
 // this class should be its own file...eg DataClass.java
